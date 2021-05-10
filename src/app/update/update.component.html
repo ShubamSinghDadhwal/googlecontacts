@@ -1,0 +1,24 @@
+<div class="container">
+    <h2 >Update Fields</h2>
+    <form method="post"  >
+    
+    <fieldset>
+    <legend> </legend>
+    <p>First Name: <input type="text" name="fname" [(ngModel)]="up_fname"/></p>
+    <p>Last Name: <input type="text" name="lname" [(ngModel)]="up_lname"/></p>
+    <p>Company: <input type="text" name="company" [(ngModel)]="up_company"/></p>
+    <p>Job Title: <input type="text" name="job" [(ngModel)]="up_job" /></p>
+    <p>Email: *<input type="email" name="email" id="email" [(ngModel)]="up_email" /></p>
+    <p>Phone: *<input type="number" name="phone" id="pincode" [(ngModel)]="up_phone" /></p>
+    </fieldset>
+    
+    <p><input type="submit" value="Save Contact" (click)="onupdate()"/></p>
+    
+    <h2>{{msg}}</h2>
+    </form>
+    </div>
+    
+    
+    
+        
+    

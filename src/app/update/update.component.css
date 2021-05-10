@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 20px;
+    font-size:17px;
+    padding:8px;
+}
+
+.container{
+    background-color: #f2f2f2;
+    border:1px solid #ccc;
+    border-radius:4px;
+    padding:5px 20px 15px 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea{
+    width:100%;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    padding:10px;
+    margin:10px 0px;
+}
+
+fieldset{
+    border:1px solid #ccc;
+    background-color:#fff;
+}
+
+input[type="submit"]{
+    background-color:#4daea1;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius: 4px;
+    width:100%
+}
+
+input[type="submit"]:hover{
+    cursor:pointer;
+    background-color: #43b38d;
+}
+
+.main_heading{
+    text-align:center;
+}

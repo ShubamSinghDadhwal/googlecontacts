@@ -1,0 +1,45 @@
+
+<div class="container" *ngIf="!nocontacts">
+<h3 class="main_heading">Contact List: </h3>
+<br><br>
+
+<table  border="1" width="100%"  align="center" cellpadding="10px" cellspacing="0px" >
+    
+    <thead >
+        <tr bgcolor="#43b38d" id="main_row" >
+            <th>SL No.</th>	
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Company</th>
+            <th>Job Title</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    
+
+    <tr *ngFor="let x of memblist; index as i" id="other_rows">
+        <td>{{i+1}}</td>
+        <td>{{x.fname}}</td>
+        <td>{{x.lname}}</td>
+        <td>{{x.company}}</td>
+        <td>{{x.job}}</td>
+        <td>{{x.email}}</td>
+        <td>{{x.phone}}</td>
+        <td> <button type="button" class="btn btn-danger" (click)=onupdate(x._id)>Update</button> </td>
+        <td> <button type="button" class="btn btn-danger" (click)=ondelete(x._id)>Delete</button> </td>
+       
+    </tr>
+</table>
+
+    {{msg}}
+
+</div>
+
+<div class="container" *ngIf="nocontacts">
+    <h2 class="main_heading">Your contact list is empty right now</h2>
+</div>
+
+

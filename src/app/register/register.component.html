@@ -1,0 +1,25 @@
+<div class="container">
+<h2 >Create New Contact</h2>
+<p>*Please Note: Email must be unique otherwise contact will not be created</p>
+<form action="" method="post" >
+
+<fieldset>
+<legend>Register </legend>
+<p>First Name: <input type="text" name="fname" [(ngModel)]="fname"/></p>
+<p>Last Name: <input type="text" name="lname" [(ngModel)]="lname"/></p>
+<p>Company: <input type="text" name="company" [(ngModel)]="company"/></p>
+<p>Job Title: <input type="text" name="job" [(ngModel)]="job" /></p>
+<p>Email: *<input type="email" name="email" id="email" [(ngModel)]="email" /></p>
+<p>Phone: *<input type="number" name="phone" id="pincode" [(ngModel)]="phone" /></p>
+
+</fieldset>
+
+<p><input type="submit" value="Save Contact" (click)="onregister()"/></p>
+
+<h2>{{msg}}</h2>
+</form>
+</div>
+
+
+
+    
